@@ -52,7 +52,7 @@ class account_manipulation_base(ABC):
             valid = self.check_username_exists(username)
 
             if not valid:
-                print(Panel("Username does not exist, Please try again", style="bold red"))
+                print(Panel("Username does not exist, Youre so original!", style="bold green"))
 
         valid = False
         while valid == False:

@@ -14,9 +14,8 @@ class menu:
 ALLOWED_GUESSES = 5
 
 
-# fetch_random_word = interaction.word_api_interaction.word_api_manipulator()
-# woddle_word = fetch_random_word.get_word()
-woddle_word = "hello"
+fetch_random_word = interaction.word_api_interaction.word_api_manipulator()
+woddle_word = fetch_random_word.get_word()
 signed_in = False
 
 if __name__ == '__main__':
