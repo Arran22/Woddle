@@ -9,8 +9,6 @@ class menu:
     def __init__(self, current_user):
         self.USER = current_user
     
-    # # WELCOME_MESSAGE -= f'\n[black on green] Welcome to Woddle 🐧 [/]\n'
-    # PLAYER_INSTRUCTIONS = "You may start guessing\n"
 ALLOWED_GUESSES = 5
 
 
@@ -21,8 +19,10 @@ signed_in = False
 if __name__ == '__main__':
     console = Console()
     print(Panel('Welcome to Woddle 🐧', style='bold green', padding=(1,2), title_align='center'))
+    
     signed_in = account_manipulation()
     current_user = signed_in.get_response()
+
     if current_user:
         console.print("[bold green]You may start guessing\n")
         game.play_game(console, woddle_word)

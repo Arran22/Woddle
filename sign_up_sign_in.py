@@ -32,15 +32,6 @@ class account_manipulation_base(ABC):
                 break
         return result
 
-            # if up_or_in.upper() == "N":
-            #     validated == True
-            #     sign_up()
-            # elif up_or_in.upper() == "Y":
-            #     validated == True
-            #     sign_in()
-            # else:
-            #     print("Please enter either Y or N to Sign in/up")
-
     def sign_up(self):
 
         valid = False

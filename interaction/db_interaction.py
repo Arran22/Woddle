@@ -41,6 +41,3 @@ class database_manager:
     def drop_user(self, user_id):
         self.cursor.execute("DELETE FROM users WHERE id = ?", (user_id,))
         self.conn.commit()
-
-    # def update_user_wins(self, user_id, wins):
-    #     self.cursor.execute("UPDATE users SET wins = wins + 1 WHERE id = ?", (wins, id))
