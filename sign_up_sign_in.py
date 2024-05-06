@@ -22,8 +22,8 @@ class account_manipulation_base(ABC):
             up_or_in = Prompt.ask("Do you have an account? (Y/N)")
 
             input_dict = {
-                'N': ('Create a new account 🔒', self.sign_up),
-                'Y': ('Sign in to an existing account 🔑', self.sign_in)
+                'N': ('Sign up', self.sign_up),
+                'Y': ('Sign in', self.sign_in)
             }
             # Checks if user has an account, and redirects to sign up or sign in page
             
